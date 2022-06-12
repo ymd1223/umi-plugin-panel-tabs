@@ -19,26 +19,17 @@ const PanelTabs: FC = () => {
         position: 'fixed',
         zIndex: 9,
         width: '100%',
-        height: '38px',
+        height: '46px',
+        line-height: '46px',
+        padding: '0px 30px 0px 20px',
         backgroundColor: '{{{tabsBarBackgroundColor}}}',
         // borderTop: '1px solid rgb(216, 220, 229)',
         borderBottom: '1px solid rgb(216, 220, 229)',
         boxShadow: '0 1px 3px 0 rgb(0 0 0 / 12%), 0 0 3px 0 rgb(0 0 0 / 4%)',
+        margin-top: -20px;
       }}
     >
-      <style>{`
-.panel-tabs-bar {
-  width: calc(100% - ${routeContext.siderWidth}px);
-  position: fixed;
-  height: 38px;
-  display: flex;
-  overflow-x: scroll;
-  padding: 0 50px 5px 5px;
-}
-.panel-tabs-bar::-webkit-scrollbar {
-  display: none;
-}
-  `}</style>
+      
       <div className="panel-tabs-bar" ref={scrollContainer}>
         {cachingNodes.map((node, idx) => (
           <PanelTab key={idx} node={node} />
@@ -49,9 +40,8 @@ const PanelTabs: FC = () => {
             position: 'fixed',
             right: 0,
             paddingRight: '5px',
-            height: '35px',
             textAlign: 'center',
-            lineHeight: '30px',
+            lineHeight: '44px',
             fontSize: '18px',
           }}
         >
