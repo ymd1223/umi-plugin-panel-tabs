@@ -108,11 +108,10 @@ const PanelTab: React.FC<{ node: CachingNode }> = ({ node }) => {
       <Tag
         ref={panelTabRef}
         style={{
-          height: '26px',
-          marginTop: '5px',
+          height: '30px',
           textAlign: 'center',
-          lineHeight: '23px',
-          fontSize: '12px',
+          lineHeight: '28px',
+          fontSize: '14px',
           cursor: 'default',
         }}
         {{{ #useAntPrimaryColor }}}
