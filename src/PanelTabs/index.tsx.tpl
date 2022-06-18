@@ -19,14 +19,14 @@ const PanelTabs: FC = () => {
         position: 'fixed',
         zIndex: 9,
         width: '100%',
-        height: '46px',
-        line-height: '46px',
-        padding: '0px 30px 0px 20px',
+        height: '48px',
+        lineHeight: '38px',
         backgroundColor: '{{{tabsBarBackgroundColor}}}',
         // borderTop: '1px solid rgb(216, 220, 229)',
         borderBottom: '1px solid rgb(216, 220, 229)',
         boxShadow: '0 1px 3px 0 rgb(0 0 0 / 12%), 0 0 3px 0 rgb(0 0 0 / 4%)',
-        margin-top: -20px;
+        padding: '5px 0 5px 20px',
+        marginTop: '-20px'
       }}
     >
       
@@ -41,7 +41,6 @@ const PanelTabs: FC = () => {
             right: 0,
             paddingRight: '5px',
             textAlign: 'center',
-            lineHeight: '44px',
             fontSize: '18px',
           }}
         >
